@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["normalmente", "porta", "rodando", "Servidor"]
+  "prisma.prismaPath": "./node_modules/.bin/prisma",
+  "prisma.pinToPrisma6": true
 }
