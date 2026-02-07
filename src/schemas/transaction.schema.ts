@@ -5,7 +5,7 @@ import { TransactionType } from "@prisma/client";
 
 const isValidobjectId = (id: string): boolean => ObjectId.isValid(id);
 
-export const createTransaction = z.object({
+export const createTransactionSchema = z.object({
 
     description: z.string().min(1, "A descrição é obrigatória"),
     amount: z.number().positive("O valor deve ser positivo"),
@@ -19,3 +19,4 @@ export const createTransaction = z.object({
         message: "Dever ser do tipo 'EXPENSE' ou 'INCOME'"
     })
 });
+
